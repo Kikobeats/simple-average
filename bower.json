@@ -1,0 +1,27 @@
+{
+  "name": "eiviyi",
+  "description": "Average module. An efficient way to calculate average.",
+  "homepage": "https://github.com/Kikobeats/eiviyi",
+  "version": "1.0.0",
+  "main": "./dist/eiviyi.js",
+  "authors": [
+    {
+      "name": "Kiko Beats",
+      "email": "josefrancisco.verdu@gmail.com",
+      "homepage": "https://github.com/Kikobeats"
+    }
+  ],
+  "repository": "Kikobeats/eiviyi",
+  "bugs": {
+    "url": "https://github.com/Kikobeats/eiviyi/issues"
+  },
+  "keywords": ["avg", "average"],
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "license": "MIT"
+}

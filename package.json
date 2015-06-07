@@ -1,0 +1,40 @@
+{
+  "name": "eiviyi",
+  "description": "Average module. An efficient way to calculate average.",
+  "homepage": "https://github.com/Kikobeats/eiviyi",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "author": {
+    "name": "Kiko Beats",
+    "email": "josefrancisco.verdu@gmail.com",
+    "url": "https://github.com/Kikobeats"
+  },
+  "repository": "Kikobeats/eiviyi",
+  "bugs": {
+    "url": "https://github.com/Kikobeats/eiviyi/issues"
+  },
+  "keywords": ["avg", "average"],
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "*",
+    "coffee-script": "*",
+    "coffeeify": "*",
+    "gulp": "*",
+    "gulp-header": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "lodash": "~3.9.3",
+    "mocha": "*",
+    "should": "*",
+    "vinyl-buffer": "*",
+    "vinyl-source-stream": "*"
+  },
+  "engines": {
+    "node": ">= 0.10.0",
+    "npm": ">= 1.4.0"
+  },
+  "scripts": {
+    "test": "sh test/test.sh"
+  },
+  "license": "MIT"
+}
