@@ -1,9 +1,9 @@
 {
-  "name": "eiviyi",
+  "name": "simple-average",
   "description": "Average module. An efficient way to calculate average.",
-  "homepage": "https://github.com/Kikobeats/eiviyi",
+  "homepage": "https://github.com/Kikobeats/simple-average",
   "version": "1.0.0",
-  "main": "./dist/eiviyi.js",
+  "main": "./dist/simple-average.js",
   "authors": [
     {
       "name": "Kiko Beats",
@@ -11,11 +11,14 @@
       "homepage": "https://github.com/Kikobeats"
     }
   ],
-  "repository": "Kikobeats/eiviyi",
+  "repository": "Kikobeats/simple-average",
   "bugs": {
-    "url": "https://github.com/Kikobeats/eiviyi/issues"
+    "url": "https://github.com/Kikobeats/simple-average/issues"
   },
-  "keywords": ["avg", "average"],
+  "keywords": [
+    "avg",
+    "average"
+  ],
   "ignore": [
     "**/.*",
     "bower_components",

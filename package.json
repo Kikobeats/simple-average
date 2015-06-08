@@ -1,7 +1,7 @@
 {
-  "name": "eiviyi",
+  "name": "simple-average",
   "description": "Average module. An efficient way to calculate average.",
-  "homepage": "https://github.com/Kikobeats/eiviyi",
+  "homepage": "https://github.com/Kikobeats/simple-average",
   "version": "1.0.0",
   "main": "./index.js",
   "author": {
@@ -9,11 +9,14 @@
     "email": "josefrancisco.verdu@gmail.com",
     "url": "https://github.com/Kikobeats"
   },
-  "repository": "Kikobeats/eiviyi",
+  "repository": "Kikobeats/simple-average",
   "bugs": {
-    "url": "https://github.com/Kikobeats/eiviyi/issues"
+    "url": "https://github.com/Kikobeats/simple-average/issues"
   },
-  "keywords": ["avg", "average"],
+  "keywords": [
+    "avg",
+    "average"
+  ],
   "dependencies": {},
   "devDependencies": {
     "browserify": "*",
@@ -23,7 +26,6 @@
     "gulp-header": "*",
     "gulp-uglify": "*",
     "gulp-util": "*",
-    "lodash": "~3.9.3",
     "mocha": "*",
     "should": "*",
     "vinyl-buffer": "*",

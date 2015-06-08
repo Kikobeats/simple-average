@@ -1,10 +1,10 @@
-# eiviyi
+# simple-average
 
-![Last version](https://img.shields.io/github/tag/Kikobeats/eiviyi.svg?style=flat-square)
-[![Build Status](http://img.shields.io/travis/Kikobeats/eiviyi/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/eiviyi)
-[![Dependency status](http://img.shields.io/david/Kikobeats/eiviyi.svg?style=flat-square)](https://david-dm.org/Kikobeats/eiviyi)
-[![Dev Dependencies Status](http://img.shields.io/david/dev/Kikobeats/eiviyi.svg?style=flat-square)](https://david-dm.org/Kikobeats/eiviyi#info=devDependencies)
-[![NPM Status](http://img.shields.io/npm/dm/eiviyi.svg?style=flat-square)](https://www.npmjs.org/package/eiviyi)
+![Last version](https://img.shields.io/github/tag/Kikobeats/simple-average.svg?style=flat-square)
+[![Build Status](http://img.shields.io/travis/Kikobeats/simple-average/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/simple-average)
+[![Dependency status](http://img.shields.io/david/Kikobeats/simple-average.svg?style=flat-square)](https://david-dm.org/Kikobeats/simple-average)
+[![Dev Dependencies Status](http://img.shields.io/david/dev/Kikobeats/simple-average.svg?style=flat-square)](https://david-dm.org/Kikobeats/simple-average#info=devDependencies)
+[![NPM Status](http://img.shields.io/npm/dm/simple-average.svg?style=flat-square)](https://www.npmjs.org/package/simple-average)
 [![Gittip](http://img.shields.io/gittip/Kikobeats.svg?style=flat-square)](https://www.gittip.com/Kikobeats/)
 
 > Average module. An efficient way to calculate average.
@@ -20,19 +20,19 @@ I was looking for a better solution than store all values in an array, sum all a
 ## Install
 
 ```bash
-npm install eiviyi --save
+npm install simple-average --save
 ```
 
 If you want to use in the browser (powered by [Browserify](http://browserify.org/)):
 
 ```bash
-bower install eiviyi --save
+bower install simple-average --save
 ```
 
 and later link in your HTML:
 
 ```html
-<script src="bower_components/eiviyi/dist/eiviyi.js"></script>
+<script src="bower_components/simple-average/dist/simple-average.js"></script>
 ```
 
 ## Usage
@@ -40,7 +40,7 @@ and later link in your HTML:
 First, load the library:
 
 ```js
-var Avg = require('eiviyi');
+var Avg = require('simple-average');
 ```
 
 Then create a new instance to use:
