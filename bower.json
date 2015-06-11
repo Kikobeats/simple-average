@@ -2,7 +2,7 @@
   "name": "simple-average",
   "description": "Average module. An efficient way to calculate average.",
   "homepage": "https://github.com/Kikobeats/simple-average",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/simple-average.js",
   "authors": [
     {
