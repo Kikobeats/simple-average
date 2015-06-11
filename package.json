@@ -17,10 +17,11 @@
     "avg",
     "average"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "coffee-script": "*"
+  },
   "devDependencies": {
     "browserify": "*",
-    "coffee-script": "*",
     "coffeeify": "*",
     "gulp": "*",
     "gulp-header": "*",
