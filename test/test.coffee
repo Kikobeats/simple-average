@@ -1,7 +1,7 @@
 should = require 'should'
 Avg = require('./../lib/Average')
 
-describe 'eiviyi ::', ->
+describe 'simple average ::', ->
 
   it 'new', ->
     @avg = new Avg()
