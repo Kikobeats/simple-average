@@ -40,13 +40,13 @@ and later link in your HTML:
 First, load the library:
 
 ```js
-var Avg = require('simple-average');
+var Average = require('simple-average');
 ```
 
 Then create a new instance to use:
 
 ```js
-var avg = new Avg({
+var average = new Average({
   round: 2, // optional
   unit: ' ms' // optional
 });
@@ -55,26 +55,26 @@ var avg = new Avg({
 Now you can add new samples to calculate the average:
 
 ```js
-avg.add(2);
+average.add(2);
 ```
 
 Also you can provide a `n` number of values to add:
 
 ```js
-avg.add(2, 3, 4, 5);
+average.add(2, 3, 4, 5);
 ```
 
 or provide an array of values:
 
 ```js
 var values = [2, 3, 4, 5];
-avg.add(values);
+average.add(values);
 ```
 
 Methods are chainable as well:
 
 ```js
-console.log(avg.add(2).add(3).add(4).add(5).resume())
+console.log(average.add(2).add(3).add(4).add(5).resume())
 // => '3.5 ms'
 ```
 
