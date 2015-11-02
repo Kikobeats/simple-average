@@ -5,8 +5,8 @@
   "version": "1.0.2",
   "main": "./index.js",
   "author": {
-    "name": "Kiko Beats",
     "email": "josefrancisco.verdu@gmail.com",
+    "name": "Kiko Beats",
     "url": "https://github.com/Kikobeats"
   },
   "repository": "Kikobeats/simple-average",
@@ -14,11 +14,12 @@
     "url": "https://github.com/Kikobeats/simple-average/issues"
   },
   "keywords": [
-    "avg",
-    "average"
+    "average",
+    "avg"
   ],
   "dependencies": {
-    "coffee-script": "*"
+    "coffee-script": "latest",
+    "pretty-ms": "latest"
   },
   "devDependencies": {
     "browserify": "*",

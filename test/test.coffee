@@ -14,4 +14,4 @@ describe 'simple average ::', ->
     @avg._avg.should.be.equal 2
 
   it 'resume', ->
-    @avg.resume().should.be.equal '2'
+    @avg.resume().should.be.equal 2

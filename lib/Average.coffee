@@ -1,10 +1,12 @@
 'use strict'
 
+prettyMs = require 'pretty-ms'
+
 module.exports = class Average
 
-  constructor: (params = {}) ->
-    @_round = params.round
-    @_unit = params.unit or ''
+  constructor: (options = null) ->
+    @_options = options
+
     do @reset
 
   reset: ->
@@ -22,15 +24,5 @@ module.exports = class Average
   count: -> @_count
 
   resume: ->
-    avg = if @round()? then @_avg.toFixed(@round()) else @_avg
-    "#{avg}#{@_unit}"
-
-  round: (value) ->
-    return @_round if (arguments.length is 0)
-    @_round = value
-    this
-
-  unit: (value) ->
-    return @_unit if (arguments.length is 0)
-    @_unit = value
-    this
+    return @_avg unless @_options
+    prettyMs result, @_options

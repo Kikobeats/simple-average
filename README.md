@@ -46,10 +46,7 @@ var Average = require('simple-average');
 Then create a new instance to use:
 
 ```js
-var average = new Average({
-  round: 2, // optional
-  unit: ' ms' // optional
-});
+var average = new Average();
 ```
 
 Now you can add new samples to calculate the average:
@@ -75,17 +72,14 @@ Methods are chainable as well:
 
 ```js
 console.log(average.add(2).add(3).add(4).add(5).resume())
-// => '3.5 ms'
+// => 3.5
 ```
 
 ## API
 
 ### .new([Options] {Object})
 
-Create a new instance. Options can be:
-
-* round **{Number}**: specify if number of decimals to fix in the `resume` output (for example, `2`). Default value is `null`.
-* unit **{String}**: specify a unit to print in the `resume` (for example, `ms`). Default value is `null`.
+Create a new instance. Options are based in [pretty-ms#options](https://github.com/sindresorhus/pretty-ms#options).
 
 ### .reset()
 
