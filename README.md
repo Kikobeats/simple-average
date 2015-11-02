@@ -97,14 +97,6 @@ Get the current number of values added for calculate the average.
 
 Get an output with the average.
 
-### .round([newRound] {Number})
-
-Get the current number of decimals to fix in the ouptut or set a new value.
-
-### .unit([newUnit] {String})
-
-Get the current unit to output or set a new value.
-
 ## Examples
 
 see `examples.js`
