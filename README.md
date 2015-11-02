@@ -5,7 +5,7 @@
 [![Dependency status](http://img.shields.io/david/Kikobeats/simple-average.svg?style=flat-square)](https://david-dm.org/Kikobeats/simple-average)
 [![Dev Dependencies Status](http://img.shields.io/david/dev/Kikobeats/simple-average.svg?style=flat-square)](https://david-dm.org/Kikobeats/simple-average#info=devDependencies)
 [![NPM Status](http://img.shields.io/npm/dm/simple-average.svg?style=flat-square)](https://www.npmjs.org/package/simple-average)
-[![Gittip](http://img.shields.io/gittip/Kikobeats.svg?style=flat-square)](https://www.gittip.com/Kikobeats/)
+[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/kikobeats)
 
 > Average module. An efficient way to calculate average.
 
