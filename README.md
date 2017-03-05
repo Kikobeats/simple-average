@@ -1,13 +1,15 @@
 # simple-average
 
-![Last version](https://img.shields.io/github/tag/Kikobeats/simple-average.svg?style=flat-square)
-[![Build Status](http://img.shields.io/travis/Kikobeats/simple-average/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/simple-average)
-[![Dependency status](http://img.shields.io/david/Kikobeats/simple-average.svg?style=flat-square)](https://david-dm.org/Kikobeats/simple-average)
-[![Dev Dependencies Status](http://img.shields.io/david/dev/Kikobeats/simple-average.svg?style=flat-square)](https://david-dm.org/Kikobeats/simple-average#info=devDependencies)
-[![NPM Status](http://img.shields.io/npm/dm/simple-average.svg?style=flat-square)](https://www.npmjs.org/package/simple-average)
-[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/kikobeats)
 
-> Average module. An efficient way to calculate average.
+![Last version](https://img.shields.io/github/tag/Kikobeats/simple-average.svg?style=flat-square)
+[![Build Status](https://img.shields.io/travis/Kikobeats/simple-average/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/simple-average)
+[![Coverage Status](https://img.shields.io/coveralls/Kikobeats/simple-average.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/simple-average)
+[![Dependency status](https://img.shields.io/david/Kikobeats/simple-average.svg?style=flat-square)](https://david-dm.org/Kikobeats/simple-average)
+[![Dev Dependencies Status](https://img.shields.io/david/dev/Kikobeats/simple-average.svg?style=flat-square)](https://david-dm.org/Kikobeats/simple-average#info=devDependencies)
+[![NPM Status](https://img.shields.io/npm/dm/simple-average.svg?style=flat-square)](https://www.npmjs.org/package/simple-average)
+[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/Kikobeats)
+
+> An efficient way to calculate average.
 
 ## Why?
 
@@ -22,64 +24,46 @@ I was looking for a better solution than store all values in an array, sum all a
 ```bash
 npm install simple-average --save
 ```
-
-If you want to use in the browser (powered by [Browserify](http://browserify.org/)):
-
-```bash
-bower install simple-average --save
-```
-
-and later link in your HTML:
-
-```html
-<script src="bower_components/simple-average/dist/simple-average.js"></script>
-```
-
 ## Usage
 
 First, load the library:
 
 ```js
-var Average = require('simple-average');
+const simpleAverage = require('simple-average')
 ```
 
 Then create a new instance to use:
 
 ```js
-var average = new Average();
+const aggregator = simpleAverage()
 ```
 
 Now you can add new samples to calculate the average:
 
 ```js
-average.add(2);
+aggregator.add(2)
 ```
 
 Also you can provide a `n` number of values to add:
 
 ```js
-average.add(2, 3, 4, 5);
-```
-
-or provide an array of values:
-
-```js
-var values = [2, 3, 4, 5];
-average.add(values);
+average.add(2)
+average.add(2, 3, 4, 5)
 ```
 
 Methods are chainable as well:
 
 ```js
-console.log(average.add(2).add(3).add(4).add(5).resume())
+const resume = average.add(2).add(3).add(4).add(5).resume()
+console.log(resume)
 // => 3.5
 ```
 
 ## API
 
-### .new([Options] {Object})
+### .simpleAverage()
 
-Create a new instance. Options are based in [pretty-ms#options](https://github.com/sindresorhus/pretty-ms#options).
+Create a new instance.
 
 ### .reset()
 
@@ -96,18 +80,6 @@ Get the current number of values added for calculate the average.
 ### .resume()
 
 Get an output with the average.
-
-### .round([newRound] {Number})
-
-Get the current number of decimals to fix in the ouptut or set a new value.
-
-### .unit([newUnit] {String})
-
-Get the current unit to output or set a new value.
-
-## Examples
-
-see `examples.js`
 
 ## License
 

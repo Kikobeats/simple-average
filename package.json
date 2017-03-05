@@ -14,31 +14,38 @@
     "url": "https://github.com/Kikobeats/simple-average/issues"
   },
   "keywords": [
+    "simple",
+    "efficient",
     "average",
     "avg"
   ],
-  "dependencies": {
-    "coffee-script": "latest",
-    "pretty-ms": "latest"
-  },
+  "files": [
+    "index.js"
+  ],
   "devDependencies": {
-    "browserify": "*",
-    "coffeeify": "*",
-    "gulp": "*",
-    "gulp-header": "*",
-    "gulp-uglify": "*",
-    "gulp-util": "*",
-    "mocha": "*",
-    "should": "*",
-    "vinyl-buffer": "*",
-    "vinyl-source-stream": "*"
+    "lodash": "latest",
+    "mocha": "latest",
+    "nyc": "latest",
+    "coveralls": "latest",
+    "should": "latest",
+    "standard": "latest",
+    "standard-markdown": "latest"
   },
   "engines": {
-    "node": ">= 0.10.0",
-    "npm": ">= 1.4.0"
+    "node": ">= 4"
   },
   "scripts": {
-    "test": "sh test/test.sh"
+    "clean": "rm -rf node_modules",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "standard && standard-markdown",
+    "pretest": "npm run lint",
+    "test": "nyc mocha"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
+    ]
   },
   "license": "MIT"
 }

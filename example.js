@@ -1,42 +1,36 @@
-'use strict';
+'use strict'
 
-var rounded = 10;
-var _ = require('lodash');
-var Avg = require('./index');
-var avg = new Avg({
-  round: rounded
-});
+const rounded = 10
+const {range, size, sum} = require('lodash')
+const simpleAverage = require('.')
+const aggregator = simpleAverage()
 
-var randomIntFromInterval = function(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-};
+function randomIntFromInterval (min, max) {
+  return Math.floor((Math.random() * (max - min + 1)) + min)
+}
 
-var percentage = function(parcial, total) {
-  return Math.floor((parcial / total) * 100) + '%';
-};
+function percentage (parcial, total) {
+  return Math.floor((parcial / total) * 100) + '%'
+}
 
-var counter = 0;
-var totalExact = 0;
-var totalArr = [];
+var counter = 0
+var totalExact = 0
+var totalArr = []
 
-setInterval(function() {
-  var arr = _.range(1, randomIntFromInterval(1, 1000));
-  // var arr = [1, 2, 3, 4];
+setInterval(function () {
+  const arr = range(1, randomIntFromInterval(1, 1000))
+  aggregator.add(arr)
+  totalArr = arr.concat(totalArr)
 
-  avg.add(arr);
+  console.log('\n[ Sample', ++counter, ']\n')
+  const avg = aggregator.avg
 
-  totalArr = arr.concat(totalArr);
+  console.log('nº of samples:', size(totalArr))
+  console.log('avg resume:', avg)
 
-  console.log('\n[ Sample', ++counter, ']\n');
-  var avgResume = avg.resume();
+  const exactAvg = (sum(totalArr) / size(totalArr)).toFixed(rounded)
+  console.log('exact average:', exactAvg)
 
-  console.log('nº of samples:', totalArr.length);
-  console.log('avg resume:', avgResume);
-
-  var exactAvg = (_.sum(totalArr) / totalArr.length).toFixed(rounded);
-  console.log('exact average:', exactAvg);
-
-  if (avgResume.toString() === exactAvg.toString()) ++totalExact;
-  console.log('success rate:', percentage(totalExact, counter));
-
-}, 1000);
+  if (avg.toString() === exactAvg.toString()) ++totalExact
+  console.log('success rate:', percentage(totalExact, counter))
+}, 1000)
