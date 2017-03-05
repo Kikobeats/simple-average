@@ -1,3 +1,10 @@
+<a name="2.0.0"></a>
+# 2.0.0 (2017-03-05)
+
+* Refactor ([0a737a7](https://github.com/kikobeats/simple-average/commit/0a737a7))
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2015-11-02)
 
