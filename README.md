@@ -73,13 +73,13 @@ Reset the current counter.
 
 Add values to calculate the average. You can provide a `n` number of values or an array of values.
 
-### .count()
+### .count
 
 Get the current number of values added for calculate the average.
 
-### .resume()
+### .avg
 
-Get an output with the average.
+Get an the current average.
 
 ## License
 
