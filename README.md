@@ -1,5 +1,7 @@
 # simple-average
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Kikobeats/simple-average.svg)](https://greenkeeper.io/)
+
 
 ![Last version](https://img.shields.io/github/tag/Kikobeats/simple-average.svg?style=flat-square)
 [![Build Status](https://img.shields.io/travis/Kikobeats/simple-average/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/simple-average)
