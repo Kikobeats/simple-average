@@ -16,7 +16,7 @@
 - Calculate it using a efficient memory way.
 - Simple and Chainable API.
 
-I was looking for a better solution than store all values in an array, sum all and divide for the length. This module is inspired in [Daniel Bernier blog](http://invisibleblocks.com/2008/7/30/long-running-averages-without-the-sum-of-preceding-values/ that's provide a memory efficient solution for the problem.
+I was looking for a better solution than store all values in an array, sum all and divide for the length. This module is inspired in [Daniel Bernier blog](http://invisibleblocks.com/2008/7/30/long-running-averages-without-the-sum-of-preceding-values/) that's provide a memory efficient solution for the problem.
 
 ## Install
 
