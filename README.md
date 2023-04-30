@@ -1,12 +1,8 @@
 # simple-average
 
 ![Last version](https://img.shields.io/github/tag/Kikobeats/simple-average.svg?style=flat-square)
-[![Build Status](https://img.shields.io/travis/Kikobeats/simple-average/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/simple-average)
 [![Coverage Status](https://img.shields.io/coveralls/Kikobeats/simple-average.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/simple-average)
-[![Dependency status](https://img.shields.io/david/Kikobeats/simple-average.svg?style=flat-square)](https://david-dm.org/Kikobeats/simple-average)
-[![Dev Dependencies Status](https://img.shields.io/david/dev/Kikobeats/simple-average.svg?style=flat-square)](https://david-dm.org/Kikobeats/simple-average#info=devDependencies)
 [![NPM Status](https://img.shields.io/npm/dm/simple-average.svg?style=flat-square)](https://www.npmjs.org/package/simple-average)
-[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/Kikobeats)
 
 > An efficient way to calculate average.
 
